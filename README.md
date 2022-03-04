@@ -51,7 +51,7 @@ Write your solutions to the problem in `app.js`. Test your solutions by opening 
 
 ## Events Fluency
 
-Now it's time to hook your fetch methods up to an event. Create your HTML tags in `index.html`. Then, in your `app.js` use the corrent DOM Selector to query the element and add your event listeners.  
+Now it's time to hook your fetch methods up to an event. Create your HTML tags in `index.html`. Then, in your `app.js` use the corrent DOM methods to select the correct HTML element and add your event listeners.  
 
 1. Create a "Get Post" form with a number input and a submit button. The form should have a min value of 1 and a max value of 100. When you submit the form, call the `getPost` function which will log that post object to the console.
 
