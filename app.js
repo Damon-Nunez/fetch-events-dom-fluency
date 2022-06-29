@@ -58,6 +58,16 @@ function searchUsers(name){
     })
   })
 }
-function searchPosts(){
-  
+function searchPosts(searchWord){
+  let searchWordPostsArray = []
+  fetch('https://jsonplaceholder.typicode.com/posts')
+  .then(response => response.json())
+  .then(array => {
+    const arrMap = array.map(obj => {
+      if(obj.body.includes(searchWord) === true){
+        searchWordPostsArray.push(obj)
+      }
+    })
+    console.log(searchWordPostsArray)
+  })
 }
